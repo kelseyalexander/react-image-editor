@@ -1,0 +1,54 @@
+.ImageEditor {
+    .editor-frame { 
+        position: relative; 
+        top: 10px; 
+    }
+
+    .image-frame { 
+        position: relative; 
+        margin: 4px 0px 4px 30px; 
+        height: 815px; 
+        width: 612px; 
+        overflow: hidden; 
+        border: 1px solid red; 
+
+    }
+
+    .image-canvas {  
+	display: none;
+        width: 630px;
+        height: 815px;
+    }
+
+    .input-image { 
+        position: absolute; 
+    }
+
+    .editor-buttons {
+        box-sizing: border-box;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -0.5rem;
+        margin-left: -0.5rem;
+        margin-top: 10px;
+
+        > button {
+            -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            -ms-flex-preferred-size: 0;
+            flex-basis: 0;
+            max-width: 100%;
+        }
+    }
+}
